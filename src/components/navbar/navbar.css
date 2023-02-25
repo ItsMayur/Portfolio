@@ -1,0 +1,23 @@
+#NavBar {
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBarLinks {
+  display: flex;
+  list-style: none;
+}
+.navBarLinks li a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 10px;
+}
+
+.navContact a {
+  background: #c33030;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: white;
+}

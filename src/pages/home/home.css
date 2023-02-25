@@ -1,0 +1,187 @@
+/* Introduction Page */
+/* Styling Left Side of screen */
+.leftSideHome {
+  width: 30vw;
+  margin: 2vh 0;
+}
+.ownerIntro {
+  flex-direction: column;
+  align-items: flex-start;
+}
+#SoftwareEngineer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4vh 0;
+}
+#SoftwareEngineerLine::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  background-color: black;
+}
+#SoftwareEngineerText {
+  margin-left: 55px;
+}
+.ownerSkills {
+  font-size: 50px;
+}
+#OwnerIntroductionPara {
+  margin: 2vh 0;
+}
+
+#ReadMoreBtn {
+  color: #c33030;
+}
+
+.contactBtns {
+  margin: 8vh 2vw;
+  flex-direction: column;
+}
+#ContactLink {
+  height: 40px;
+  padding: 10px;
+  margin: 0 30px;
+  border-radius: 5px;
+  color: #c33030;
+  border: solid 2px #c33030;
+}
+#ContactLink:hover {
+  background-color: #c33030;
+  color: white;
+  transition: all 0.3s ease;
+}
+#ProjectsLink:hover img {
+  position: relative;
+  top: -2px;
+  right: -2px;
+}
+#GotoArrow {
+  text-align: center;
+  align-items: center;
+  height: 17px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Styling Right side of screen */
+.rightSideHome {
+  width: 30vw;
+}
+.ownerPicBackground {
+  pointer-events: none;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: center;
+}
+.ownerPicBackground img {
+  border-radius: 150px;
+  height: 250px;
+  width: 250px;
+}
+#RightLineSocialLinks {
+  display: flex;
+  margin-right: 35px;
+  margin-left: 5px;
+}
+#RightLineSocialLinks::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 30px;
+  background-color: #121121;
+}
+.ownerSocialLinks {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 3vh 0;
+  justify-content: center;
+}
+.ownerSocialLinks li {
+  margin: 0 4px;
+}
+.socialLink svg:hover {
+  transition: all ease 1s;
+  transform: rotateZ(360deg);
+  filter: invert(29%) sepia(75%) saturate(2003%) hue-rotate(341deg)
+    brightness(80%) contrast(89%);
+}
+/* Technologies worked on page */
+#TechnologyWorkedOn {
+  margin: 5vh 0;
+  align-items: center;
+  flex-direction: column;
+}
+.workedOnHeading {
+  margin: 5vh 0;
+}
+.workedOnHeading::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 178px;
+  background: #c33030;
+}
+#technologiesTab {
+  height: 350px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.technologyCard {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 300px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 20px;
+  border: solid 2px #c33030;
+  box-shadow: 0 2px 5px black;
+}
+.technologyCard p {
+  font-size: 25px;
+}
+#MoreTechnologies {
+  position: relative;
+  top: -20px;
+}
+#LessTechnologies {
+  display: none;
+  position: relative;
+  top: -20px;
+}
+/* Testimonials area */
+
+#Testimonials {
+  flex-direction: column;
+  margin: 2vh 0;
+  height: 300px;
+}
+
+#TestimonialHeading::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100px;
+  background: #c33030;
+}
+#testimonialContent {
+  width: 70vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+#testimonialContent::-webkit-scrollbar {
+  display: none;
+}
+.testimonialCard {
+  display: inline-block;
+  margin: 40px 20px;
+  border: solid 2px black;
+  border-radius: 20px;
+  height: 200px;
+  width: 190px;
+  background: #c33030;
+}
