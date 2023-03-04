@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
+import resume from "./Resume.pdf";
 
 function Navbar() {
   return (
@@ -25,7 +26,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navContact centerIt">
-        <a>Resume</a>
+        <a href={resume}>Resume</a>
       </div>
     </div>
   );
