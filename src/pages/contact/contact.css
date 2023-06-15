@@ -1,0 +1,29 @@
+#Contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactLeft {
+  width: 25vw;
+}
+.contactHeading {
+  margin: 10px 0;
+}
+
+.contactMail {
+  width: 18vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+#Email {
+  color: #c33030;
+  font-size: 14px;
+  font-weight: 900;
+}
+.contactRight {
+  width: 25vw;
+}

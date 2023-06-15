@@ -1,0 +1,65 @@
+#ProjectsPage {
+  text-align: center;
+}
+
+#ProjectHeading::after {
+  content: "";
+  position: absolute;
+
+  height: 2px;
+  width: 58px;
+  background: #c33030;
+}
+#ProjectTabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+#ProjectTab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  height: 512px;
+  width: 300px;
+  margin: 16px;
+  border-radius: 5px;
+  border: solid 2px #c33030;
+  box-shadow: 0px 4px 6px black;
+}
+#ProjectTab:hover {
+  box-shadow: 0px 6px 10px black;
+}
+
+#ProjectTab div img {
+  height: 280px;
+  width: 280px;
+  border-radius: 4px;
+}
+
+#ProjectTabDetails {
+  height: 200px;
+  width: 280px;
+}
+#ProjectTabDetails h2 {
+  text-align: center;
+}
+#ProjectTabDetails p {
+  overflow: hidden;
+  height: 137px;
+  font-size: 14px;
+}
+#ProjectTabReadMoreBtn {
+  color: #c33030;
+}
+#ProjectTabDetails div a {
+  background: #c33030;
+  border-radius: 5px;
+  padding: 6px 10px;
+  color: white;
+}
+#ProjectTabDetails div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
