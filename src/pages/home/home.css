@@ -179,9 +179,13 @@
 .testimonialCard {
   display: inline-block;
   margin: 40px 20px;
-  border: solid 1px black;
-  border-radius: 20px;
+  border: solid 2px #c33030;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  box-shadow: 5px 5px 5px #d2d2d2;
   height: 200px;
   width: 400px;
-  background: #c33030;
+}
+#TestimonialDiscription {
+  width: 400px;
 }

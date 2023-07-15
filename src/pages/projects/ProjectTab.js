@@ -6,8 +6,8 @@ const ProjectTab = (props) => {
   return (
     <div>
       <div id="ProjectTab">
-        <div>
-          <img src={props.headImage} alt="" srcset="" />
+        <div id="ProjectImgBox">
+          <img src={props.headImage} alt="No Image of the Project" srcset="" />
         </div>
         <div id="ProjectTabDetails">
           <h2>{props.title}</h2>

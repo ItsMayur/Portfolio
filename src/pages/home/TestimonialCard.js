@@ -1,8 +1,17 @@
 import React from "react";
-import "./home.css";
 
 const TestimonialCard = () => {
-  return;
+  return (
+    <div className="testimonialCard">
+      <div id="TestimonialDiscription">
+        <p> </p>
+      </div>
+      <div id="TestimonialOwner">
+        <img src="" alt="" srcset="" />
+        <p></p>
+      </div>
+    </div>
+  );
 };
 
 export default TestimonialCard;

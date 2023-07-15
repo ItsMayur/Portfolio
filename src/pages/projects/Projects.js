@@ -16,6 +16,12 @@ export default function Projects() {
           headImage={WSLogo}
           link="https://winnex-seekers.netlify.app/"
         />
+        <ProjectTab
+          title="GetYourDone"
+          discription="GetYourDrone is a real time drone delivery app that uses users location and provide him nearest drone with real time data of drone.It is India's first internet based ground control system for drones.It is an end to end solution for requesting of drone over the internet."
+          // headImage={WSLogo}
+          // link="https://winnex-seekers.netlify.app/"
+        />
       </div>
     </div>
   );

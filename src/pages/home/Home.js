@@ -3,6 +3,7 @@ import "./home.css";
 import { Link } from "react-router-dom";
 import OwnerPic from "./OwnerPic.png";
 import gotoArrow from "./gotoArrow.svg";
+import TestimonialCard from "./TestimonialCard";
 
 export default function Home() {
   const handleMore = () => {
@@ -167,7 +168,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  to="https://www.instagram.com/itsmayur718/"
+                  to="https://www.instagram.com/hnji_mayur/"
                   target="_blank"
                   className="socialLink"
                 >
@@ -706,28 +707,15 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <div id="Testimonials" className="centerIt">
+      {/* <div id="Testimonials" className="centerIt">
         <div id="TestimonialHeading">
           <h1>Testimonials</h1>
         </div>
         <div id="testimonialContent">
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
-          <div className="testimonialCard"></div>
+          <TestimonialCard />
+          <TestimonialCard />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

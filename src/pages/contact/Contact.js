@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+
 import "./contact.css";
+import { Alert } from "bootstrap";
 
 const Contact = () => {
+  const formRef = useRef(null);
+  const scriptUrl =
+    "https://script.google.com/macros/s/AKfycbz_Ji_Qa9XrSorvqxLXH65kQgyZc2-hAHWdDxSdfj4kACafQoBJldor4UPBDZhLFww/exec";
+
+  const [loading, setLoading] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    fetch(scriptUrl, {
+      method: "POST",
+      body: new FormData(formRef.current),
+    })
+      .then((res) => {
+        alert("Message send sucessfully.We will react to you soon.");
+        setLoading(false);
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <div id="Contact">
       <div className="contactLeft">
@@ -41,8 +63,27 @@ const Contact = () => {
       </div>
       <div className="contactRight">
         <div id="contactRightHeading">
-          <h3>Send us a message</h3>
+          <h2>Send us a message</h2>
         </div>
+        <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
+          <input type="text" name="Name" id="" placeholder="Full name" />
+          <input type="email" name="Email" id="" placeholder="Email" />
+          <input type="number" name="Number" id="" placeholder="Number" />
+          <input type="text" name="Subject" id="" placeholder="Subject" />
+          <p>Tell us more about your project</p>
+          <textarea
+            name="MoreProjectDetails"
+            id="MoreProjectDetails"
+            placeholder=""
+            rows="5"
+          />
+          <input
+            type="submit"
+            name="submit"
+            value={loading ? "Loading..." : "Send Message"}
+            id="SendMessageBtn"
+          />
+        </form>
       </div>
     </div>
   );
