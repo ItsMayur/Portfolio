@@ -5,6 +5,7 @@
   background: #fff;
   box-shadow: 0 0 5px black;
 }
+
 .centerIt {
   display: flex;
   align-items: center;
@@ -26,4 +27,13 @@ h6,
 p,
 a {
   font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 768px) {
+  .App {
+    margin: 1vh 1vw;
+    padding: 0vh 4vw;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 5px black;
+  }
 }

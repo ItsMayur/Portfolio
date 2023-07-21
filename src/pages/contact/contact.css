@@ -70,3 +70,22 @@
 #SendMessageBtn:active {
   transform: translateY(1px);
 }
+
+@media (max-width: 768px) {
+  #Contact {
+    flex-direction: column;
+  }
+  .contactLeft {
+    width: 90vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contactRight {
+    width: 80vw;
+  }
+  .contactMail {
+    margin-left: 20vw;
+  }
+}

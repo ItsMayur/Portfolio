@@ -6,7 +6,7 @@ import resume from "./Resume.pdf";
 function Navbar() {
   return (
     <div id="NavBar">
-      <div className="Portfolio Heading">
+      <div className="PortfolioHeading">
         <p>ItsMayur</p>
       </div>
       <div>

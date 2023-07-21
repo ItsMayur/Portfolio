@@ -21,3 +21,22 @@
   padding: 8px 10px;
   color: white;
 }
+@media (max-width: 768px) {
+  #NavBar {
+    justify-content: space-evenly;
+  }
+
+  .PortfolioHeading {
+    display: none;
+  }
+  .navBarLinks li a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px;
+  }
+  .navContact a {
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: white;
+  }
+}

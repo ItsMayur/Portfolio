@@ -67,3 +67,41 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  #ProjectTabs {
+    justify-content: center;
+    align-items: center;
+  }
+  #ProjectTab {
+    width: 90vw;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  #ProjectImgBox {
+    display: flex;
+    justify-content: center;
+    height: 40vw;
+    width: 40vw;
+  }
+  #ProjectTab div img {
+    height: 40vw;
+    width: 40vw;
+    border-radius: 5px;
+  }
+  #ProjectTabDetails {
+    width: 45vw;
+  }
+  #ProjectTabDetails p {
+    height: 115px;
+  }
+  #ProjectTabReadMoreBtn {
+    margin-left: 0px;
+  }
+  #ProjectTabDetails div a {
+    margin-right: 0px;
+  }
+}
