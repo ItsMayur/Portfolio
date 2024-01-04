@@ -1,0 +1,42 @@
+#BlogIntro {
+  margin: 40px 0;
+}
+#blogIntroImg {
+  width: 300px;
+}
+#BlogIntroHeadingBox {
+  display: flex;
+  justify-content: space-between;
+}
+#BlogIntroHeading {
+  font-weight: bolder;
+  color: #c33030;
+}
+#BlogIntroDate {
+  font-weight: 900;
+  font-size: medium;
+  color: gray;
+  margin: 10px 0;
+}
+#BlogIntroDiscription {
+  line-height: 30px;
+}
+#BlogIntroButtons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  font-weight: 900;
+  font-family: "Open Sans", sans-serif;
+}
+#BlogIntroFunctions {
+  display: flex;
+}
+#BlogIntroFunctions div {
+  margin-right: 20px;
+}
+#BlogIntroShareBtns {
+  z-index: 1;
+  display: none;
+  position: relative;
+  background: gold;
+}

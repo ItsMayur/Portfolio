@@ -12,7 +12,7 @@ const ProjectTab = (props) => {
         <div id="ProjectTabDetails">
           <h2>{props.title}</h2>
           <p>{props.discription}</p>
-          <div>
+          <div id="ProjectActions">
             <div id="ProjectTabReadMoreBtn" onClick={showEloboratedDetails}>
               {/* Has to be work on this later */}
               Read More

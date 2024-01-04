@@ -1,3 +1,12 @@
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-150px * 5));
+  }
+}
+
 /* Introduction Page */
 /* Styling Left Side of screen */
 
@@ -26,7 +35,7 @@
   margin-left: 55px;
 }
 .ownerSkills {
-  font-size: 50px;
+  font-size: 30px;
 }
 #OwnerIntroductionPara {
   margin: 2vh 0;
@@ -111,13 +120,11 @@
 }
 /* Technologies worked on page */
 #TechnologyWorkedOn {
-  margin: 5vh 0;
+  margin: 2vh 0;
   align-items: center;
   flex-direction: column;
 }
-.workedOnHeading {
-  margin: 5vh 0;
-}
+
 .workedOnHeading::after {
   content: "";
   position: absolute;
@@ -126,30 +133,59 @@
   background: #c33030;
 }
 #technologiesTab {
-  height: 350px;
+  height: 290px;
   overflow: hidden;
-  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
+#technologiesTab:before,
+#technologiesTab:after {
+  content: "";
+  position: absolute;
+  height: 350px;
+  width: 450px;
+  z-index: 2;
+}
+
+#technologiesTab:after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+#technologiesTab:before {
+  left: 0;
+  top: 0;
+}
+
+#technologiesTab .track {
+  display: flex;
+  width: calc(150px * 10);
+  animation: scroll 15s 0.5s linear infinite;
+}
+
+#technologiesTab .technologyCard {
+  width: 350px;
+}
+
+#technologiesTab .technologyCard svg {
+  height: 90px;
+}
+
 .technologyCard {
   flex-direction: column;
   justify-content: space-evenly;
-  height: 300px;
-  width: 250px;
-  margin: 20px;
+  height: 200px;
+  margin: 0 20px;
   border-radius: 20px;
   border: solid 2px #c33030;
 }
 .technologyCard p {
-  font-size: 25px;
-}
-#MoreTechnologies {
-  position: relative;
-  top: -20px;
-}
-#LessTechnologies {
-  display: none;
-  position: relative;
-  top: -20px;
+  font-size: 17px;
+  font-style: italic;
 }
 /* Testimonials area */
 

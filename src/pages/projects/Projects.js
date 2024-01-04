@@ -2,6 +2,7 @@ import React from "react";
 import "./projects.css";
 import ProjectTab from "./ProjectTab";
 import WSLogo from "./Project images/WS.jpg";
+import TilddLogo from "./Project images/tildd.jpg";
 
 export default function Projects() {
   return (
@@ -21,6 +22,12 @@ export default function Projects() {
           discription="GetYourDrone is a real time drone delivery app that uses users location and provide him nearest drone with real time data of drone.It is India's first internet based ground control system for drones.It is an end to end solution for requesting of drone over the internet."
           // headImage={WSLogo}
           // link="https://winnex-seekers.netlify.app/"
+        />
+        <ProjectTab
+          title="tildd-Blogging Website"
+          discription="GetYourDrone is a real time drone delivery app that uses users location and provide him nearest drone with real time data of drone.It is India's first internet based ground control system for drones.It is an end to end solution for requesting of drone over the internet."
+          headImage={TilddLogo}
+          link="https://winnex-seekers.netlify.app/"
         />
       </div>
     </div>
