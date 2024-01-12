@@ -5,3 +5,8 @@
 #Footer p {
   color: white;
 }
+@media (max-width: 768px) {
+  #Footer {
+    font-size: 12px;
+  }
+}

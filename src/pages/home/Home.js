@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import OwnerPic from "./OwnerPic.png";
 import gotoArrow from "./gotoArrow.svg";
 import Typewriter from "typewriter-effect";
+import Projects from "./../projects/Projects";
 
 export default function Home() {
   return (
@@ -59,6 +60,9 @@ export default function Home() {
             <img src={OwnerPic} alt="" />
           </div>
           <div>
+            <p id="ResponsiveFollowMe">
+              <strong>Check out and Follow me</strong>
+            </p>
             <ul className="ownerSocialLinks">
               <p>
                 <strong>Check out and Follow me</strong>
@@ -702,6 +706,9 @@ export default function Home() {
           <TestimonialCard />
         </div>
       </div> */}
+      <div>
+        <Projects />
+      </div>
     </div>
   );
 }

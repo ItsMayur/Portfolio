@@ -2,7 +2,10 @@ import React from "react";
 import "./projects.css";
 import ProjectTab from "./ProjectTab";
 import WSLogo from "./Project images/WS.jpg";
-import TilddLogo from "./Project images/tildd.jpg";
+import DroneProject from "./Project images/DroneDelivery.jpg";
+import MiniProjects from "./MiniProjects";
+import ECart from "./Project images/ECart.png";
+import Blogging from "./Project images/Blogging.png";
 
 export default function Projects() {
   return (
@@ -18,17 +21,28 @@ export default function Projects() {
           link="https://winnex-seekers.netlify.app/"
         />
         <ProjectTab
-          title="GetYourDone"
-          discription="GetYourDrone is a real time drone delivery app that uses users location and provide him nearest drone with real time data of drone.It is India's first internet based ground control system for drones.It is an end to end solution for requesting of drone over the internet."
-          // headImage={WSLogo}
-          // link="https://winnex-seekers.netlify.app/"
+          title="Winnix Seekers"
+          discription="Crafted an innovative shopping website, conquering inventory challenges with a cutting-edge tracking system. Engineered a secure, scalable user database fortified with encryption, while implementing a sleek login authentication system. Demonstrated prowess in addressing critical issues, elevating my proficiency in dynamic e-commerce development."
+          headImage={ECart}
+          link="https://github.com/ItsMayur/E-Commerce-Project-MERN-"
         />
         <ProjectTab
-          title="tildd-Blogging Website"
-          discription="GetYourDrone is a real time drone delivery app that uses users location and provide him nearest drone with real time data of drone.It is India's first internet based ground control system for drones.It is an end to end solution for requesting of drone over the internet."
-          headImage={TilddLogo}
-          link="https://winnex-seekers.netlify.app/"
+          title="Drone Delivery Project"
+          discription="Developed an internet-based drone delivery web application using the MERN stack during an internship. Due to confidentiality constraints, specific details about the project are not disclosed."
+          headImage={DroneProject}
         />
+        <ProjectTab
+          title="Blogging Website"
+          discription="Created a blogging website named tildd showcasing expertise in Full Stack Hosting, Linux Server management, and Dynamic page creation. Overcame challenges such as navigating the deployment process on a Linux-based server using the Command Line."
+          headImage={Blogging}
+          link="http://www.tildd.me/"
+        />
+      </div>
+      <div id="MiniProjects">
+        <div id="MicroProjectHeading">
+          <h1>Some micro projects</h1>
+        </div>
+        <MiniProjects />
       </div>
     </div>
   );

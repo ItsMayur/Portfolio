@@ -61,29 +61,32 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="contactRight">
-        <div id="contactRightHeading">
-          <h2>Send us a message</h2>
+      <div className="contactFlip">
+        <div className="contactRightFlip"></div>
+        <div className="contactRight">
+          <div id="contactRightHeading">
+            <h2>Send us a message</h2>
+          </div>
+          <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
+            <input type="text" name="Name" id="" placeholder="Full name" />
+            <input type="email" name="Email" id="" placeholder="Email" />
+            <input type="number" name="Number" id="" placeholder="Number" />
+            <input type="text" name="Subject" id="" placeholder="Subject" />
+            <p>Tell us more about your project</p>
+            <textarea
+              name="MoreProjectDetails"
+              id="MoreProjectDetails"
+              placeholder=""
+              rows="5"
+            />
+            <input
+              type="submit"
+              name="submit"
+              value={loading ? "Loading..." : "Send Message"}
+              id="SendMessageBtn"
+            />
+          </form>
         </div>
-        <form ref={formRef} onSubmit={handleSubmit} name="google-sheet">
-          <input type="text" name="Name" id="" placeholder="Full name" />
-          <input type="email" name="Email" id="" placeholder="Email" />
-          <input type="number" name="Number" id="" placeholder="Number" />
-          <input type="text" name="Subject" id="" placeholder="Subject" />
-          <p>Tell us more about your project</p>
-          <textarea
-            name="MoreProjectDetails"
-            id="MoreProjectDetails"
-            placeholder=""
-            rows="5"
-          />
-          <input
-            type="submit"
-            name="submit"
-            value={loading ? "Loading..." : "Send Message"}
-            id="SendMessageBtn"
-          />
-        </form>
       </div>
     </div>
   );

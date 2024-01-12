@@ -13,11 +13,10 @@ import PortfolioPic from "./Services Pics/Portfolio.svg";
 export default function Services() {
   return (
     <div id="SERVICES">
+      <div id="ProgrammerImgDiv">
+        <h1>Our Services</h1>
+      </div>
       <div className="services">
-        <div id="ProgrammerImgDiv">
-          <img src={ProgrammerImg} alt="" id="ProgrammerImg" />
-          <h1>Our Services</h1>
-        </div>
         <div id="ServicesTab">
           <ServiceCard
             title="Frontend Development"

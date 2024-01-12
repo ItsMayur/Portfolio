@@ -1,5 +1,6 @@
 #Contact {
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 10vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,8 +15,7 @@
 .contactMail {
   width: 18vw;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+
   margin: 20px 0;
 }
 
@@ -24,13 +24,38 @@
   font-size: 14px;
   font-weight: 900;
 }
+
+/* @keyframes left_rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-90deg);
+  }
+} */
+
 .contactRight {
   width: 25vw;
   border: solid 2px #e9e9e9;
   box-shadow: 5px 5px 5px beige;
   padding: 20px;
   border-radius: 20px;
+  /* display: none; */
 }
+/* .contactRightFlip {
+  width: 25vw;
+  z-index: 0;
+  height: 71vh;
+  border: solid 2px #e9e9e9;
+  box-shadow: 5px 5px 5px beige;
+  padding: 20px;
+  background: #c33030;
+  border-radius: 20px;
+} */
+.contactFlip {
+  /* position: relative; */
+}
+
 .contactRight form {
   display: flex;
   flex-direction: column;
@@ -74,6 +99,7 @@
 @media (max-width: 768px) {
   #Contact {
     flex-direction: column;
+    font-size: 16px;
   }
   .contactLeft {
     width: 90vw;
@@ -85,7 +111,11 @@
   .contactRight {
     width: 80vw;
   }
-  .contactMail {
-    margin-left: 20vw;
+
+  #contactRightHeading {
+    font-size: 16px;
+  }
+  .contactHeading > h1 {
+    font-size: 28px;
   }
 }

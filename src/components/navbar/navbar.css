@@ -4,7 +4,9 @@
   justify-content: space-between;
   align-items: center;
 }
-
+#MobileNavBar {
+  display: none;
+}
 .navBarLinks {
   display: flex;
   list-style: none;
@@ -26,9 +28,6 @@
     justify-content: space-evenly;
   }
 
-  .PortfolioHeading {
-    display: none;
-  }
   .navBarLinks li a {
     text-decoration: none;
     color: #000;
@@ -38,5 +37,50 @@
     border-radius: 5px;
     padding: 5px 8px;
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  #NavBar {
+    display: none;
+  }
+  #MobileNavBar {
+    overflow-y: hidden;
+    align-items: center;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+  }
+  #Ham div {
+    margin: 6px 0;
+    width: 30px;
+    height: 2px;
+    background: #000;
+  }
+  #Ham {
+    padding: 0 20px;
+  }
+  #NavLinksResponsive {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 10vh;
+  }
+  .navBarLinks li {
+    width: 100vw;
+  }
+  .navBarLinks li a {
+    background: #c33030;
+    margin: 0;
+    border-bottom: solid 2px white;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .navBarLinks {
+    flex-direction: column;
+    /* display: none; */
   }
 }

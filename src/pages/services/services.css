@@ -1,5 +1,6 @@
 .services {
   align-items: center;
+  text-align: center;
   justify-content: space-between;
 }
 #ProgrammerImgDiv {
@@ -10,20 +11,16 @@
   width: 100%;
 }
 .services h1 {
-  position: absolute;
-  top: 206px;
-  left: 550px;
-  color: #fff;
-  font-size: 4rem;
+  /* position: relative; */
 }
-.services h1::after {
+#ProgrammerImgDiv::after {
   content: "";
   position: absolute;
-  display: flex;
   height: 2px;
-  width: 230px;
-  background: white;
+  width: 90px;
+  background: #c33030;
 }
+
 #ServicesTab {
   display: flex;
   flex-wrap: wrap;
@@ -31,10 +28,41 @@
 }
 #ServiceCard {
   margin: 50px;
+  margin-bottom: 30px;
   width: 200px;
+  scale: 0.8;
+  opacity: 0.6;
+  animation: ease-in fade-in forwards;
+  animation-timeline: view();
+  animation-range: 100px 500px;
 }
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    scale: 1;
+    margin-bottom: 50px;
+  }
+}
+
 #ServiceCard div {
   pointer-events: none;
 }
+@media (max-width: 420px) {
+  #ServiceCard h4 {
+    font-size: 22px;
+  }
+  #ServiceCard p {
+    font-size: 16px;
+  }
+  #ServiceCard {
+    width: 80vw;
+    margin: 50px 0;
+  }
+}
+
 @media (max-width: 768px) {
+  #ServiceCard {
+    margin: 50px 25px;
+  }
 }

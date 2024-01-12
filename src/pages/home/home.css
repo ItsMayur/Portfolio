@@ -112,6 +112,9 @@
 .ownerSocialLinks li {
   margin: 0 4px;
 }
+#ResponsiveFollowMe {
+  display: none;
+}
 .socialLink svg:hover {
   transition: all ease 1s;
   transform: rotateZ(360deg);
@@ -224,4 +227,68 @@
 }
 #TestimonialDiscription {
   width: 400px;
+}
+
+@media (max-width: 768px) {
+  #Introduction {
+    flex-direction: column;
+    padding: 5vw;
+    font-size: 20px;
+  }
+
+  .ownerIntro {
+    width: 90vw;
+  }
+  .rightSideHome {
+    width: 90vw;
+  }
+  .ownerPicBackground {
+    height: 90vw;
+    margin: 0;
+  }
+  .ownerPicBackground img {
+    border-radius: 20px;
+    height: 90vw;
+    width: auto;
+  }
+  #ResponsiveFollowMe {
+    text-align: center;
+    display: block;
+  }
+  .ownerSocialLinks p {
+    display: none;
+  }
+  #RightLineSocialLinks {
+    display: none;
+  }
+  .socialLink svg {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 10px;
+  }
+  #technologiesTab .technologyCard svg {
+    height: 60px;
+  }
+  #technologiesTab {
+    height: fit-content;
+    padding: 5vh 0;
+  }
+  #TechnologyWorkedOn {
+    margin: 0vh 0;
+  }
+  .technologyCard {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100px;
+    margin: 0 5px;
+    border-radius: 10px;
+    border: solid 2px #c33030;
+  }
+  .technologyCard p {
+    font-size: 17px;
+    font-style: italic;
+  }
+  .workedOnHeading {
+    padding: 0 10px;
+  }
 }
